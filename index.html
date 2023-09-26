@@ -1,0 +1,68 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+        <div class="form-container">
+            <h2>Registration Form</h2>
+        <form id="registrationForm" enctype="multipart/form-data">
+            <div class="user-section">
+                <label for="Name">Name:</label>
+                <input type="text" name="Name" required>
+
+                <label for="email">Email:</label>
+                <input type="email" name="email" required>
+
+                <label for="password">Password:</label>
+                <input type="password" name="password" required>
+
+                <label for="gender">Gender:</label>
+                <select name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select>
+
+                <label for="skills">Skills:</label>
+                <input type="text" name="skills">
+
+                <label for="profilePicture">Profile Picture:</label>
+                <input type="file" name="profilePicture">
+            </div>
+
+            <div class="buttons">
+               <button type="submit">Register</button>
+               <button type="reset">Clear</button>
+            </div>
+        </form>
+        </div>
+
+        <div class="display-container">
+            <h2>Registration Data:</h2>
+            <div class="data">
+            <div id="displayData">
+                <ul>
+
+                </ul>
+            </div>
+            <div class="profile-picture">
+                
+            </div>
+        </div>
+        </div>
+    </div>
+
+    <script src="srcipt.js"></script>
+</body>
+</html>
+
+
